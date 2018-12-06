@@ -3,9 +3,6 @@ package com.example.trins.chatting;
 
 import java.util.Date;
 
-/**
- * Created by reale on 18/11/2016.
- */
 
 public class ChatMessage {
     private String messageText;
