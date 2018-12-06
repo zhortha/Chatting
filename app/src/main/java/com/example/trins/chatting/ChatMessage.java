@@ -3,6 +3,12 @@ package com.example.trins.chatting;
 
 import java.util.Date;
 
+<<<<<<< HEAD
+=======
+/**
+ * Created by reale on 18/11/2016.
+ */
+>>>>>>> fany
 
 public class ChatMessage {
     private String messageText;

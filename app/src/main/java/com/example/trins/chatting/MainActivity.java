@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+<<<<<<< HEAD
+=======
+import android.widget.Button;
+>>>>>>> fany
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -39,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
     ImageView emojiButton,submitButton;
     EmojIconActions emojIconActions;
 
+<<<<<<< HEAD
+=======
+    Button btnKeQCCodeActivity;
+
+>>>>>>> fany
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -72,7 +81,11 @@ public class MainActivity extends AppCompatActivity {
                 displayChatMessage();
             }
             else{
+<<<<<<< HEAD
                 Snackbar.make(activity_main,"We couldn't sign you in.Please try again later", Snackbar.LENGTH_SHORT).show();
+=======
+                Snackbar.make(activity_main,"We couldn't sign you in. Please try again later", Snackbar.LENGTH_SHORT).show();
+>>>>>>> fany
                 finish();
             }
         }
@@ -84,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         activity_main = (RelativeLayout)findViewById(R.id.activity_main);
+<<<<<<< HEAD
+=======
+        btnKeQCCodeActivity = (Button) findViewById(R.id.btnToQRScanner);
+>>>>>>> fany
 
         //Add Emoji
         emojiButton = (ImageView)findViewById(R.id.emoji_button);
@@ -102,6 +119,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
+=======
+        btnKeQCCodeActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), QRScannerActivity.class);
+                startActivity(i);
+            }
+        });
+
+>>>>>>> fany
         //Check if not sign-in then navigate Signin page
         if(FirebaseAuth.getInstance().getCurrentUser() == null)
         {
